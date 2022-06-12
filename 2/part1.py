@@ -12,7 +12,7 @@ def read_lines(path: str) -> int:
         yield direction, int(num) 
 
 
-def calc_position(path: str) -> int:
+def part_1(path: str) -> int:
     position = Position(0, 0)
     for direction, num in read_lines(path):
         if direction == 'down':
@@ -24,4 +24,4 @@ def calc_position(path: str) -> int:
     return position.depth * position.horizontal
 
 
-print(calc_position('2/input.txt')) # 2147104
+part_1('2/input.txt')

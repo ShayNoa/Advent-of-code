@@ -11,7 +11,7 @@ def window(iterable: List[str], n: int) -> List[str]:
         yield iterable[i:i+n]
 
 
-def count_increases(path:str) -> int:
+def part_2(path:str) -> int:
     counter = prev = 0
     lines = read_lines(path)
     for rows in window(lines, 3):
@@ -22,5 +22,5 @@ def count_increases(path:str) -> int:
     return counter - 1
 
 
-print(count_increases('1/input.txt')) 
+part_2('1/input.txt')
 

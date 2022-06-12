@@ -7,7 +7,7 @@ def read_lines(path):
     return lines
 
 
-def count_vertival(path):
+def part_1(path):
     lines = read_lines(path)
     length = len(lines[0].strip())
     gamma, espilon = '', ''
@@ -18,7 +18,7 @@ def count_vertival(path):
     return int(gamma, 2) * int(espilon, 2)
 
 
-print(count_vertival('3/input.txt')) # 693486
+part_1('3/input.txt')
 
 
 

@@ -33,7 +33,7 @@ def part_2(path):
     return False
 
 
-print(part_2('3/input.txt')) # 3379326
+part_2('3/input.txt')
 
 
 

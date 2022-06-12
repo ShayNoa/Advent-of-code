@@ -4,7 +4,7 @@ def generate_lines(path: str) -> int:
         yield int(row.strip())
         
 
-def count_increased(path: str) -> int: 
+def part_1(path: str) -> int: 
     counter = 0
     prev = 0
     for num in generate_lines(path):
@@ -12,7 +12,8 @@ def count_increased(path: str) -> int:
             counter += 1
         prev = num
     return counter - 1
+      
         
-print(count_increased('1/input.txt')) 
+part_1('1/input.txt')
 
     
